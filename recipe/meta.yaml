@@ -1,5 +1,5 @@
 {% set name = "kadi-apy" %}
-{% set version = "0.46.0" %}
+{% set version = "0.47.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://gitlab.com/iam-cms/kadi-apy/-/archive/v{{ version }}/kadi-apy-v{{ version }}.tar.gz
-  sha256: 2a5110f5230a7fe579b79262f3453cb66e780c9bc812cdac2b8b782cb0534ec7
+  sha256: 58e962b957aa37f045177b950b9ddcb757005ab21f516f250fa8dd4a000b9897
 
 build:
   entry_points:
-   - kadi-apy=kadi_apy.cli.main:kadi_apy
+    - kadi-apy=kadi_apy.cli.main:kadi_apy
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
