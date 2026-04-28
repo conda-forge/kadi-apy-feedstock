@@ -14,7 +14,6 @@ Kadi4Mat makes it possible to programmatically interact with most of the
 resources that can be used through the web interface by sending suitable HTTP
 requests to the different endpoints the API provides.
 
-
 Current build status
 ====================
 
