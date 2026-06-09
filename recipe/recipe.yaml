@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: kadi-apy
-  version: "0.49.0"
+  version: "0.50.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://gitlab.com/iam-cms/kadi-apy/-/archive/v${{ version }}/kadi-apy-v${{ version }}.tar.gz
-  sha256: 3fb2c6e965aa51737e0661eb09ca0033167c333a152d012c27fa3a561143da33
+  sha256: 107f7cb995b726b3d97ab622c433509eda1ebea67ec7eea8717928a976c8c234
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
